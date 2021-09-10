@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Balsamiq Sans", cursive;
+}
+#header {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.158);
+  height: 70px;
+}
+
+#navbar__container {
+  width: 100%;
+  height: 70px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+}
+.navbar_logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_logo_image {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.navbar_logo_text {
+  display: none;
+}
+
+.navbar__list {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  margin-right: 10px;
+}
+.navbar_list_items {
+  list-style: none;
+}
+.navbar_list_items a {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 5px 7px;
+  color: var(--secondary-color);
+}
+.navbar__cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__cart img {
+  width: 15px;
+  height: 15px;
+}
+.hero_image {
+  background: url("https://fthmb.tqn.com/cD-ezebgK4kIlVGXWxFcBit2vlU=/3865x2576/filters:fill(auto,1)/traditional-ukrainian-cuisine-beet-soup-borscht-641975214-58ff57e03df78ca1591edf20.jpg");
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.hero_wrapper {
+  color: WHITE;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid green; */
+}
+.hero_wrapper h1 {
+  font-size: 1rem;
+}
+.hero_wrapper p {
+  font-size: 0.8rem;
+  color: white;
+}
+.product {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+.product_list_items {
+  width: 40%;
+  background-color: wheat;
+  margin-bottom: 20px;
+  padding: 4px;
+  border-radius: 10px;
+  /* height: 190px; */
+}
+.product_list_items img {
+  width: 100%;
+}
+.product_heading {
+  font-size: 1rem;
+}
+.form_code {
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+  width: 300px;
+}
+#contact {
+  width: 95%;
+  margin: auto;
+  background-image: url(C:\Users\kiruthika\Downloads);
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(164, 17, 17, 0.363);
+}
+
+.main_contact_wrapper {
+  border-radius: 5px;
+  z-index: 20;
+  position: relative;
+}
+
+.main_contact_wrapper::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.123);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.contact__heading {
+  text-align: center;
+}
+.contact__heading h1 {
+  background: -webkit-linear-gradient(45deg, rgb(64, 255, 0), rgb(218, 9, 166));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1000;
+}
+
+.contact__heading p {
+  color: white;
+}
+.contact__form form {
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__form form input,
+.contact__form form textarea {
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px solid greenyellow;
+}
+
+@media screen and (max-width: 1200px) {
+}
